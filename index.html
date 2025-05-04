@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROA La Para</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <header>
+    <h1>Escuela PROA La Para</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="formulario.html">Turnos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Bienvenidos a la app institucional</h2>
+    <p>Desde aquí podrán acceder a información relevante de la escuela, comunicados y servicios.</p>
+  </main>
+</body>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service Worker registrado'))
+      .catch(err => console.error('Error al registrar el Service Worker', err));
+  }
+</script>
+</html>
